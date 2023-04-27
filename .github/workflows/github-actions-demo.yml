@@ -28,7 +28,8 @@ jobs:
           echo ${{ github.event_name }}
           echo ${{ github.ref }}
           echo ls
- Test:
+
+  Test:
     if: github.event_name == 'workflow_dispatch'
     environment: Test
     runs-on: ubuntu-latest
